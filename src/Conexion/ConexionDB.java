@@ -7,7 +7,7 @@ import java.sql.*;
 public class ConexionDB {
     
     // Manejo de las constantes de datos de la conexión
-    private static final String URL = "jdbc:mysql://localhost:3306/sistema_escolar";
+    private static final String URL = "jdbc:mysql://localhost:3306/medicare_db";
     private static final String USER = "root";
     private static final String PASS = "";
     
