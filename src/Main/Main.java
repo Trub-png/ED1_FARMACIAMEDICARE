@@ -1,19 +1,18 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package Main;
 
-import Vista.InicioSesion;
 import Controlador.InicioSesionController;
+import Vista.InicioSesion;
 
 public class Main {
-    public static void main(String[] args){
-        InicioSesion ventana = new InicioSesion();
+    public static void main(String[] args) {
+        // 1. Instanciar la Vista
+        InicioSesion vistaLogin = new InicioSesion();
         
-        InicioSesionController controlador = new InicioSesionController(ventana);
+        // 2. Instanciar el Controlador pasándole la vista
+        InicioSesionController controlador = new InicioSesionController(vistaLogin);
         
-        ventana.setLocationRelativeTo(null);
-        ventana.setVisible(true);
+        // 3. Centrar y hacer visible la ventana
+        vistaLogin.setLocationRelativeTo(null);
+        vistaLogin.setVisible(true);
     }
 }

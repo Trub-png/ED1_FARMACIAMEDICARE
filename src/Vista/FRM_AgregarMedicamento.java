@@ -213,10 +213,10 @@ public class FRM_AgregarMedicamento extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnActualizar;
-    private javax.swing.JButton btnBorrar;
-    private javax.swing.JButton btnGuardar;
-    private javax.swing.JButton btnLimpiar;
+    public javax.swing.JButton btnActualizar;
+    public javax.swing.JButton btnBorrar;
+    public javax.swing.JButton btnGuardar;
+    public javax.swing.JButton btnLimpiar;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
@@ -227,12 +227,12 @@ public class FRM_AgregarMedicamento extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     public javax.swing.JScrollPane paneTabla;
-    private javax.swing.JTextField txt_Administracion;
-    private javax.swing.JTextField txt_Fabricante;
-    private javax.swing.JTextField txt_Fecha_Expiracion;
-    private javax.swing.JTextField txt_Gramaje;
-    private javax.swing.JTextField txt_Lote;
-    private javax.swing.JTextField txt_Nombre;
-    private javax.swing.JTextField txt_Proveedor;
+    public javax.swing.JTextField txt_Administracion;
+    public javax.swing.JTextField txt_Fabricante;
+    public javax.swing.JTextField txt_Fecha_Expiracion;
+    public javax.swing.JTextField txt_Gramaje;
+    public javax.swing.JTextField txt_Lote;
+    public javax.swing.JTextField txt_Nombre;
+    public javax.swing.JTextField txt_Proveedor;
     // End of variables declaration//GEN-END:variables
 }
