@@ -19,7 +19,7 @@ public class MedicamentoDB {
             ps.setString(1, med.getNombre());
             ps.setString(2, med.getFabricante());
             ps.setString(3, med.getGramaje());
-            ps.setString(4, med.getTipo_admi()); // Fíjate cómo usamos tus getters
+            ps.setString(4, med.getTipo_admi());
             ps.setString(5, med.getProveedor());
             ps.setString(6, med.getLote());
             ps.setString(7, med.getFecha());
@@ -46,7 +46,7 @@ public class MedicamentoDB {
             ps.setString(5, med.getProveedor());
             ps.setString(6, med.getLote());
             ps.setString(7, med.getFecha());
-            ps.setInt(8, med.getId_medicamento()); // ID para saber cuál actualizar
+            ps.setInt(8, med.getId_medicamento()); 
 
             ps.executeUpdate();
             return true;

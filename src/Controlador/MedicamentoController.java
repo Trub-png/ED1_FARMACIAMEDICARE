@@ -13,7 +13,7 @@ import javax.swing.table.DefaultTableModel;
 public class MedicamentoController implements ActionListener {
     
     private final FRM_AgregarMedicamento ventana;
-    private final MedicamentoDB medicamentoDB; // <-- ESTA ES LA VARIABLE QUE FALTABA
+    private final MedicamentoDB medicamentoDB;
     private JTable tabla;
     private int idSeleccionado = -1;
     
@@ -22,7 +22,6 @@ public class MedicamentoController implements ActionListener {
         this.ventana = ventana;
         this.medicamentoDB = medicamentoDB;
         
-        // Ponemos los botones a escuchar los clics
         this.ventana.btnGuardar.addActionListener(this);
         this.ventana.btnActualizar.addActionListener(this);
         this.ventana.btnBorrar.addActionListener(this);
