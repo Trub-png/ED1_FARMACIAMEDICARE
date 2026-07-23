@@ -1,23 +1,47 @@
 package Modelo;
 
 public class Usuario {
+    
     private int id_usuario;
-    private String correo, contraseña, nombre, telefono, fechaNacimiento;
+    private String usuario;
+    private String password;
 
-    public Usuario(int id_usuario, String correo, String contraseña, String nombre, String telefono, String fechaNacimiento) {
+    // Constructor para crear un usuario
+    public Usuario(String usuario, String password) {
+        this.usuario = usuario;
+        this.password = password;
+    }
+
+    // Constructor para obtener un usuario desde la BD
+    public Usuario(int id_usuario, String usuario, String password) {
         this.id_usuario = id_usuario;
-        this.correo = correo;
-        this.contraseña = contraseña;
-        this.nombre = nombre;
-        this.telefono = telefono;
-        this.fechaNacimiento = fechaNacimiento;
+        this.usuario = usuario;
+        this.password = password;
     }
 
     // Getters
-    public int getId_usuario() { return id_usuario; }
-    public String getCorreo() { return correo; }
-    public String getContraseña() { return contraseña; }
-    public String getNombre() { return nombre; }
-    public String getTelefono() { return telefono; }
-    public String getFechaNacimiento() { return fechaNacimiento; }
+    public int getId_usuario() {
+        return id_usuario;
+    }
+
+    public String getUsuario() {
+        return usuario;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    // Setters
+    public void setId_usuario(int id_usuario) {
+        this.id_usuario = id_usuario;
+    }
+
+    public void setUsuario(String usuario) {
+        this.usuario = usuario;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
 }
