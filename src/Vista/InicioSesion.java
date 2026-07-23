@@ -56,7 +56,7 @@ public class InicioSesion extends javax.swing.JFrame {
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/farmacias-similares-seeklogo.png"))); // NOI18N
         jLabel4.setText("jLabel4");
 
-        jLabel5.setFont(new java.awt.Font("Segoe UI", 0, 36)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(0, 51, 255));
         jLabel5.setText("FARMACIAS MEDICARE");
 
