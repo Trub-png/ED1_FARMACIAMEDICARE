@@ -4,11 +4,17 @@
  */
 package Modelo;
 
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
+import Conexion.ConexionDB;
 
 public class UsuarioDB {
     public Usuario validarLogin(String correo, String contrasena) {
         String sql = "SELECT * FROM Usuario WHERE correo = ? AND contrasena = ?";
-        try (Connection conn = new ConexionDB().conectar();
+        try (Connection conn = ConexionDB.conexion();
              PreparedStatement ps = conn.prepareStatement(sql)) {
             ps.setString(1, correo);
             ps.setString(2, contrasena);
@@ -23,7 +29,7 @@ public class UsuarioDB {
 
     public boolean registrarNuevoUsuario(Usuario u) {
         String sql = "INSERT INTO Usuario (correo, contrasena, nombre, telefono, fecha_nac) VALUES (?, ?, ?, ?, ?)";
-        try (Connection conn = new ConexionDB().conectar();
+        try (Connection conn = ConexionDB.conexion();
              PreparedStatement ps = conn.prepareStatement(sql)) {
             ps.setString(1, u.getCorreo());
             ps.setString(2, u.getContraseña());

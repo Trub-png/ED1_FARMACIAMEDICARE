@@ -4,10 +4,17 @@
  */
 package Controlador;
 
+import Vista.InicioSesion;
+
 /**
  *
  * @author IanEH
  */
 public class InicioSesionController {
-    
+
+    private final InicioSesion ventana;
+
+    public InicioSesionController(InicioSesion ventana) {
+        this.ventana = ventana;
+    }
 }
